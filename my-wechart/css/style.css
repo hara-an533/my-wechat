@@ -1,0 +1,768 @@
+@font-face {
+    font-family: 'iconfont';
+    /* project id 1732112 */
+    src: url('//at.alicdn.com/t/font_1732112_i3igs1io5ip.eot');
+    src: url('//at.alicdn.com/t/font_1732112_i3igs1io5ip.eot?#iefix') format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_1732112_i3igs1io5ip.woff2') format('woff2'),
+        url('//at.alicdn.com/t/font_1732112_i3igs1io5ip.woff') format('woff'),
+        url('//at.alicdn.com/t/font_1732112_i3igs1io5ip.ttf') format('truetype'),
+        url('//at.alicdn.com/t/font_1732112_i3igs1io5ip.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+i {
+    font-style: normal;
+}
+
+.w {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.msg-container,
+.addressList-container,
+.search-container,
+.myself-container {
+    width: 100%;
+    height: 713px;
+    background-color: #ededed;
+}
+
+.msg-container header,
+.addressList-container header,
+.personal-info header {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.msg-container header div:first-child,
+.addressList-container header div:first-child {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+
+.msg-container header h5,
+.addressList-container header h5 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.msg-container header i,
+.addressList-container header i {
+    position: absolute;
+    right: 15px;
+    top: 3px;
+}
+
+.msg-container header div:last-child,
+.addressList-container header div:last-child {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.msg-container header input,
+.addressList-container header input {
+    width: 94%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.msg-container header div:last-child i,
+.addressList-container header div:last-child i {
+    position: absolute;
+    left: -35px;
+    top: 10px;
+}
+
+.msg-lists {
+    width: 100%;
+    background-color: #fff;
+}
+
+.msg-lists li {
+    width: 100%;
+    height: 65px;
+    padding-top: 8px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.msg-lists li div {
+    float: left;
+    font-size: 15px;
+}
+
+.msg-lists li .time {
+    float: right;
+    color: #dedede;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.msg-lists li img {
+    vertical-align: middle;
+}
+
+.msg-lists .msg_con {
+    margin-left: 10px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+}
+
+.msg-lists .msg_con .name {
+    padding-top: 8px;
+}
+
+.msg-lists .msg_con .msg {
+    padding-top: 13px;
+    font-size: 12px;
+    color: #aeaeae;
+}
+
+.footer {
+    height: 100px;
+    width: 330px;
+}
+
+.footer>div {
+    width: 330px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer i {
+    font-size: 32px;
+}
+
+.footer>div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.current {
+    color: #57bf6a
+}
+
+.footer span {
+    font-size: 12px;
+}
+
+.footer .address-book i {
+    padding-left: 5px;
+}
+
+.footer .meself span {
+    padding-left: 10px;
+}
+
+/* 通讯录 */
+.addressList-container header i {
+    font-size: 20px;
+}
+
+.addressList-container nav {
+    background-color: #fff;
+}
+
+.addressList-container nav ul>li {
+    position: relative;
+    height: 55px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.addressList-container img {
+    width: 45px;
+    height: 45px;
+    padding-top: 5px;
+}
+
+.addressList-container span {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 18px;
+}
+
+.addressList-container nav p {
+    background-color: #ededed;
+    padding-left: 10px;
+    height: 32px;
+    line-height: 32px;
+}
+
+/* 发现 */
+.search-container .header {
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    width: 100%;
+}
+
+.search-container .header h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.ww {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.search-container .friends,
+.program,
+.pay,
+.set {
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    background-color: #fff;
+}
+
+.program {
+    margin-top: 7px;
+}
+
+.search-container .scan,
+.search-container .search,
+.shopping {
+    width: 100%;
+    height: 112px;
+    background-color: #fff;
+    margin-top: 7px;
+}
+
+.search-container .scan div,
+.search-container .search div,
+.shopping div,
+.function-options li {
+    height: 56px;
+    line-height: 56px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.search-container i {
+    font-size: 20px;
+}
+
+.search-container .right {
+    color: #b0b0b0;
+    float: right;
+}
+
+.search-container .bule {
+    color: #4880d5;
+}
+
+.search-container .yellow {
+    color: #ecca42;
+}
+
+.search-container .red {
+    color: #fc535a;
+}
+
+.search-container .green {
+    color: #63be83;
+}
+
+/* 我的 */
+.myself-container .header {
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+
+.myself-container .header i {
+    float: right;
+    font-size: 22px;
+}
+
+.myself-container .myself {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    color: #8c8c8c;
+    font-size: 18px;
+}
+
+.myself-container .myself>div {
+    height: 140px;
+    line-height: 140px;
+    display: flex;
+}
+
+.self-msg {
+    padding-top: 30px;
+    padding-left: 8px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.myself-container .myself img {
+    width: 60px;
+    height: 60px;
+    padding-top: 40px;
+}
+
+.myself-container .myself .icon {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.myself-container .myself .icon i:first-child {
+    padding-right: 10px;
+}
+
+.myself-container .myself h4 {
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+.function-options {
+    background-color: #fff;
+}
+
+.myself-container .pay,
+.myself-container .set,
+.myself-container .function-options {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.myself-container .pay {
+    margin-bottom: 8px;
+}
+
+.myself-container i {
+    font-size: 22px;
+}
+
+.myself-container .right {
+    float: right;
+    color: #b0b0b0;
+}
+
+.myself-container .green {
+    color: #5cc38b;
+}
+
+.myself-container .yellow {
+    color: #f4d36c;
+}
+
+.myself-container .blue {
+    color: #4e7cca;
+}
+
+/* 动态组件切换 */
+.left-enter {
+    transform: translateX(400px);
+}
+
+.left-leave-to {
+    transform: translateX(-400px);
+    position: absolute;
+}
+
+.left-enter-active,
+.left-leave-active,
+.right-enter-active,
+.right-leave-active {
+    transition: all 1s;
+}
+
+.right-enter {
+    transform: translateX(-400px);
+}
+
+.right-leave-to {
+    transform: translateX(400px);
+    position: absolute;
+}
+
+#app {
+    position: relative;
+    width: 100%;
+    height: 813px;
+}
+
+/* 微信聊天详情页 */
+.msg-content .toleft {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.msg-content .toright {
+    display: flex;
+}
+
+.msg-header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+    font-size: 22px;
+}
+
+.msg-header i {
+    color: #232323;
+    font-size: 18px;
+}
+
+.msg-header .num {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    background-color: #d5d5d5;
+    font-size: 14px;
+    margin-top: 20px;
+    border: 1px solid #d5d5d5;
+    border-radius: 10px;
+}
+
+.msg-content .toleft span,
+.msg-content .toright span {
+    position: relative;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+.msg-content .toleft span {
+    background-color: #a9e979;
+    margin-right: 15px;
+}
+
+.msg-content .toright span {
+    background-color: #fff;
+    margin-left: 15px;
+}
+
+.msg-content p {
+    margin-bottom: 15px;
+}
+
+.msg-content .time {
+    height: 25px;
+    width: 100%;
+    line-height: 25px;
+    text-align: center;
+    color: #a7a7a7;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.msg-content .toleft span::before {
+    position: absolute;
+    top: 14px;
+    right: -14px;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 7px solid transparent;
+    border-left: 7px solid #a9e979;
+}
+
+.msg-content .toright span::before {
+    position: absolute;
+    top: 14px;
+    left: -14px;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 7px solid transparent;
+    border-right: 7px solid #fff;
+}
+
+.msg-detail .msg-content .img {
+    padding: 0;
+    background-color: transparent;
+    margin-right: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.msg-detail .msg-content i img {
+    width: 150px;
+    height: 118px;
+}
+
+.msg-detail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+}
+
+.msg-inp {
+    display: flex;
+    height: 70px;
+    padding-top: 8px;
+    background-color: #f6f6f6;
+    justify-content: space-between;
+}
+
+.msg-inp i {
+    font-size: 26px;
+    vertical-align: middle;
+}
+
+.msg-inp input {
+    width: 250px;
+    height: 40px;
+    margin-left: 7px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* 好友个人信息页 */
+.friend_detail,
+.personal-info {
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+}
+
+.friend_detail .friend-header {
+    width: 100%;
+    height: 130px;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+
+.friend_detail .friend-header .top {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    line-height: 40px;
+}
+
+.friend_detail .friend-header .header {
+    display: flex;
+}
+
+.friend_detail .header img {
+    width: 65px;
+    height: 65px;
+}
+
+.friend_detail .header .detail {
+    margin-left: 8px;
+}
+
+.friend_detail .header .detail p {
+    font-size: 12px;
+    color: #999;
+}
+
+.friend_detail .header .detail .name {
+    margin: 3px 0 3px 0;
+}
+
+.friend_detail li:nth-child(-n+4) {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.friend_detail .friend-options li,
+.friend_detail .more li {
+    display: flex;
+    justify-content: space-between;
+    color: #0a0a0a;
+}
+
+.friend_detail .friend-options li i,
+.friend_detail .more li i {
+    color: #b5b5b5;
+}
+
+.friend_detail .friend-options {
+    background-color: #fff;
+    margin-bottom: 8px;
+}
+
+.friend_detail .more {
+    background-color: #fff;
+    margin-bottom: 8px;
+}
+
+.friend_detail .more .monents {
+    height: 75px;
+    line-height: 75px;
+}
+
+.friend_detail .chat {
+    background-color: #fff;
+}
+
+.friend_detail .chat li {
+    text-align: center;
+    color: #5c6a97;
+}
+
+.friend_detail .chat li i {
+    font-size: 18px;
+}
+
+/* 朋友圈 start */
+.moments .bg {
+    position: relative;
+    width: 100%;
+    height: 290px;
+    padding-bottom: 25px;
+    background: url(../images/bg.jpg);
+}
+
+.moments .bg .icon {
+    height: 70px;
+    line-height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg .icon i {
+    font-size: 20px;
+    color: #fff
+}
+
+.moments .bg .self {
+    position: absolute;
+    width: 140px;
+    height: 70px;
+    right: 0;
+    bottom: -20px;
+    color: #fff;
+}
+
+.moments .bg .self img {
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    padding-left: 20px;
+}
+
+.moments-detail {
+    margin-top: 20px;
+}
+
+.moments-detail .fir,
+.moments-detail .sec {
+    display: flex;
+    padding-top: 20px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.moments-detail .fir div,
+.moments-detail .sec div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 12px 12px;
+}
+
+.moments-detail .fir div img {
+    width: 90px;
+    height: 190px;
+    margin: 8px 0 8px;
+}
+
+.moments-detail h4 {
+    color: #606e88;
+}
+
+.moments-detail .fir div p:last-child {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+/* 个人信息页 */
+.personal-info header {
+    display: flex;
+    height: 55px;
+    line-height: 70px;
+}
+
+.personal-info i {
+    font-size: 20px;
+}
+
+.personal-info header span {
+    margin-left: 35%;
+    font-size: 18px;
+    color: #161616;
+}
+
+.personal-info .info-content {
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.personal-info .profile {
+    background-color: #fff;
+}
+
+.personal-info li {
+    height: 55px;
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-info .portrait {
+    height: 85px;
+    line-height: 85px;
+}
+
+.personal-info .portrait img {
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+}
+
+.personal-info .info-content>div div,
+.personal-info .profile i {
+    color: #868686;
+}
